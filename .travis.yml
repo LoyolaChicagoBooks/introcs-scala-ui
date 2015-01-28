@@ -1,0 +1,12 @@
+language: scala
+scala: 2.11.5
+script: sbt test
+env:
+  global:
+  - secure: NX/F9hcLzj5oUAr5o0AItuwtKiPtG07qmnuDw8mzUI+4NgKscNtvU89+62tyNZqN/I/As4f6OTb8pcCiWr6EcRVFQuoag/u7JJv9NtofaPunxfhkF3i1/g0E3eS730t8o8CzaE6VwXOfyoYMFNy6ND4lOeEw6mhWbJx4jbxUVAc=
+  - secure: e9PcvSfQy0ss5jQkhA+0j7m98EcNPz7CGa9Ng/JCaWfNXkWc10ZyBCEG7VTYFSBatZZmtJibnUIN+mZ43bFFFv0+vL5GtWGq6Y0ScjoNxfxFSqYCKBQ1pMmvxKmdyjOc9bFeN4BB9Wp1+9rRVvXlFu1KJhhQDYh+F8W5lFCE/m0=
+after_success:
+  - >
+      test "${TRAVIS_PULL_REQUEST}" = 'false' &&
+      sh "$TRAVIS_BUILD_DIR/.bintray-credentials.sh" &&
+      sbt 'set version := version.value + "." + System.getenv("TRAVIS_BUILD_NUMBER")' publish
