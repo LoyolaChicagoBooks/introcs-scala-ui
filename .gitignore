@@ -13,7 +13,6 @@ bin/
 gen/
 proguard_cache/
 target/
-project/
 tmp/
 .idea/
 
