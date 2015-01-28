@@ -8,13 +8,16 @@ Pedagogically appropriate functions for user input handling in Scala
 
 # Getting Scala-UI
 
-To use Scala-UI in your sbt-based project, add these lines to your `build.sbt`.
+To use Scala-UI in your sbt-based project, add these lines to your `build.sbt`
 
     scalaVersion := "2.11.5"
 
     resolvers += "loyolachicagocode@bintray" at "http://dl.bintray.com/loyolachicagocode/maven"
 
-    libraryDependencies += "edu.luc.cs" %% "introcs-scala-ui" % "0.1"
+    libraryDependencies += "edu.luc.cs" %% "introcs-scala-ui" % "x.y.z"
+
+where `x.y.z` is the most recent version number of this package available on
+[Bintray](https://bintray.com/loyolachicagocode/maven/introcs-scala-ui/view#files).
 
 
 # Quick Start
