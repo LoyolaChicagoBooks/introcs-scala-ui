@@ -5,11 +5,9 @@ Pedagogically appropriate functions for user input handling in Scala
 
 # Getting Scala-UI
 
-We are working on properly syncing Scalaµ from Bintray's jcenter to
-Maven Central.
+To use Scala-UI in your sbt-based project, add these lines to your `build.sbt`.
 
-Meanwhile, you can resolve the dependency on Scalaµ by adding these
-lines to your `build.sbt`.
+    scalaVersion := "2.11.5"
 
     resolvers += "loyolachicagocode@bintray" at "http://dl.bintray.com/loyolachicagocode/maven"
 
