@@ -1,6 +1,6 @@
 language: scala
 scala: 2.11.5
-script: sbt test
+script: sbt coveralls
 env:
   global:
   - secure: NX/F9hcLzj5oUAr5o0AItuwtKiPtG07qmnuDw8mzUI+4NgKscNtvU89+62tyNZqN/I/As4f6OTb8pcCiWr6EcRVFQuoag/u7JJv9NtofaPunxfhkF3i1/g0E3eS730t8o8CzaE6VwXOfyoYMFNy6ND4lOeEw6mhWbJx4jbxUVAc=
