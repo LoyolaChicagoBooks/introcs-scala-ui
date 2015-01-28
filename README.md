@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/LoyolaChicagoBooks/introcs-scala-ui.svg?branch=master)](https://travis-ci.org/LoyolaChicagoBooks/introcs-scala-ui)
+[![Coverage Status](https://coveralls.io/repos/LoyolaChicagoBooks/introcs-scala-ui/badge.svg)](https://coveralls.io/r/LoyolaChicagoBooks/introcs-scala-ui)
+
 # Scala-UI
 
 Pedagogically appropriate functions for user input handling in Scala
