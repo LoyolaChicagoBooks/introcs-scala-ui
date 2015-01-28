@@ -1,5 +1,4 @@
 // For Coveralls.io integration
-// Do not update until sbt-scoverage 1.0 stabilizes!
 
 addSbtPlugin("org.scoverage" %% "sbt-scoverage" % "1.0.4")
 
