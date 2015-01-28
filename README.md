@@ -13,8 +13,6 @@ To use Scala-UI in your sbt-based project, add these lines to your `build.sbt`.
 
     libraryDependencies += "edu.luc.cs" %% "introcs-scala-ui" % "0.1"
 
-You can also just clone this project and play around with the example
-worksheets.
 
 # Quick Start
 
